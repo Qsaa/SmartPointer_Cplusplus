@@ -70,7 +70,7 @@ struct ScopedPtr
     }
     private:
     ScopedPtr(const ScopedPtr& ptr);
-    //ScopedPtr& operator=(const ScopedPtr& ptr);
+    ScopedPtr& operator=(const ScopedPtr& ptr);
     AA* ptr_;
 };
 
@@ -78,12 +78,12 @@ struct ScopedPtr
 int main()
 {
     ScopedPtr p(new AA(12));
-    ScopedPtr p1;
-    p1 = p;
-    cout<<*(p.release())<<endl;
-    cout<<*(p.release())<<endl;
+    // ScopedPtr p1;
+    // p1 = p;
+    // cout<<*(p.release())<<endl;
+    // cout<<*(p.release())<<endl;
 
-    cout<<*(p1.release())<<endl;
+    // cout<<*(p1.release())<<endl;
     //A a(12);
     //std::cout<<a;
     return 0;
