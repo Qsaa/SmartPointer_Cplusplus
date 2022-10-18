@@ -77,7 +77,7 @@ struct ScopedPtr
 
 int main()
 {
-    ScopedPtr p(new AA(12));
+    //ScopedPtr p(new AA(12));
     // ScopedPtr p1;
     // p1 = p;
     // cout<<*(p.release())<<endl;
@@ -86,5 +86,8 @@ int main()
     // cout<<*(p1.release())<<endl;
     //A a(12);
     //std::cout<<a;
+    cout << "hh";
+    int a;
+    cin >> a;
     return 0;
 }
